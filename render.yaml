@@ -19,3 +19,5 @@ services:
         sync: false
       - key: SPRING_MAIL_PASSWORD
         sync: false
+      - key: JWT_SECRET
+        sync: false
