@@ -6,7 +6,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/bom")
-@CrossOrigin(origins = "*")
 public class BOMController {
 
     @Autowired

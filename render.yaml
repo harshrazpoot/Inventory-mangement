@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: order-craft-backend
+    runtime: docker
+    plan: free
+    rootDir: backend/order_craft/order_craft
+    dockerfilePath: backend/order_craft/order_craft/Dockerfile
+    dockerContext: backend/order_craft/order_craft
+    envVars:
+      - key: FRONTEND_ORIGIN
+        value: https://inventory-mangement-ivory.vercel.app
+      - key: SPRING_DATASOURCE_URL
+        sync: false
+      - key: SPRING_DATASOURCE_USERNAME
+        sync: false
+      - key: SPRING_DATASOURCE_PASSWORD
+        sync: false
+      - key: SPRING_MAIL_USERNAME
+        sync: false
+      - key: SPRING_MAIL_PASSWORD
+        sync: false
